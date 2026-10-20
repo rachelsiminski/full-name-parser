@@ -17,11 +17,12 @@ public class FullNameParser {
 
         System.out.println("First name: " + partsOfName[0]);
 
-        if (!Boolean.parseBoolean(partsOfName[2])) {
-            System.out.println("Last name: " + partsOfName[1]);
+        if (partsOfName.length == 3) {
+            System.out.println("Middle name: " + partsOfName[1]);
+            System.out.println("Last name: " + partsOfName[2]);
         }
         else {
-            System.out.println("Middle name: " + partsOfName[1]);
+            System.out.println("Middle name: none");
             System.out.println("Last name: " + partsOfName[1]);
         }
     }
